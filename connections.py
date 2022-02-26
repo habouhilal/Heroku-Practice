@@ -22,7 +22,10 @@ cloudMClnt=MongoClient()
 # db= client['Cluster0']
 cloudMClnt=MongoClient("mongodb+srv://"+ cloudM + ":"
                        + cloudMpassword + "@Cluster0.uhckr.mongodb.net/Cluster0?retryWrites=true&w=majority")
+
 #cloudMClnt= MongoClient('localhost', 27017)
+
+
 
 from sqlalchemy import create_engine, MetaData, Table, select
 
