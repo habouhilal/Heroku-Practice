@@ -24,7 +24,7 @@ def home():
     return render_template('index.html')
 
 @app.route("/readData")
-@cross_origin(supports_credentials= True)
+#@cross_origin(supports_credentials= True)
 def read():
         altdatadf = cloudM_R()
         resdf=altdatadf[(altdatadf["Year"]==2019)]
